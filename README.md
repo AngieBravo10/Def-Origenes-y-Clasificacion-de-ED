@@ -7,6 +7,6 @@ Clasificación de las Ecuacione Diferenciales" del curso de verano Ecuaciones Di
 
 Los nombres de los archivos con su respectiva exteción son:
 
-    * latex.tex
-    * latex.pdf
-    * EDOMelissa.m
+    * latex.tex (Archivo de latex)
+    * latex.pdf (Archivo PDF)
+    * EDOMelissa.m (Archivo de Matlab)
