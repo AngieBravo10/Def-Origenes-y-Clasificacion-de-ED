@@ -1,21 +1,21 @@
 function solEDO = EDOMelissa() % Inicio Scrip EDOMelissa()
     %%%%    Scrip que resuelve una EDO separable, lineal, de primer grado por
-    %%%%    medio del comando dsolve(), con condici髇 inicial.
+    %%%%    medio del comando dsolve(), con condici贸n inicial.
     
-    syms Y(x) % Definiendo simbolog韆 o variables simb髄icas
-    eds = diff(Y,x) == 4 - 2*x; % diff() para diferenciar una expresi髇 o funci髇 simb髄ica
+    syms Y(x) % Definiendo simbolog铆a o variables simb贸licas
+    eds = diff(Y,x) == 4 - 2*x; % diff() para diferenciar una expresi贸n o funci贸n simb贸lica
     condicion = Y(0) == 1; % Definiendo la condicion inicial
-    sol(x) = dsolve( eds, condicion); % dsolve() me da la soluci髇 de la EDO de acuerdo a la condici髇 iicial
-    solEDO = sol(x); % le asigno a solEDO lo que tiene la funci髇 sol(x)  
+    sol(x) = dsolve( eds, condicion); % dsolve() me da la soluci贸n de la EDO de acuerdo a la condici贸n icial
+    solEDO = sol(x); % le asigno a solEDO lo que tiene la funci贸n sol(x)  
     
     x = -1:0.005:1; % genero un vector x con valores desde -1 hasta 1, con incremento de 0.005
-    y = eval( vectorize( solEDO ) ); % Eval鷒 la soluci髇 particular de la EDO con los valores del vector x
+    y = eval( vectorize( solEDO ) ); % Eval煤o la soluci贸n particular de la EDO con los valores del vector x
     
-    %Graficando la soluci髇 particular de la EDO
+    %Graficando la soluci贸n particular de la EDO
     figure('Name' , 'Angie Melissa Bravo Gonzalez') % Dandole un nombre a la figura o ventana
-    plot(x,y,'red', 0,sol(0),'-s') % Graficando la soluci髇 particular de la EDO y la condici髇 inicial
+    plot(x,y,'red', 0,sol(0),'-s') % Graficando la soluci贸n particular de la EDO y la condici贸n inicial
     
-    title('Soluci髇 particular de la EDO: y(x) = 1 - x(x - 4), y satisface y(0) = 1')%T韙ulo de la gr醘ica
+    title('Soluci贸n particular de la EDO: y(x) = 1 - x(x - 4), y satisface y(0) = 1')%T铆tulo de la gr谩fica
     xlabel('x') % Etiquetando el eje x
     ylabel('y(x)') % Etiquetando el eje y
     legend('y(x) = 1 - x(x - 4)','y(0) = 1') % Etiquetas de las funciones representadas
@@ -29,19 +29,19 @@ function solEDO = EDOMelissa() % Inicio Scrip EDOMelissa()
     box off
     
     % Mostrando resultados por consola con fprintf()
-    fprintf('\nAPLICACI覰 QUE RESUELVE LA EDO DE VARIAVLE SEPARABLE:')
+    fprintf('\nAPLICACI脫N QUE RESUELVE LA EDO DE VARIAVLE SEPARABLE:')
     fprintf('\n\tdy/dx = 4 - 2x  con y(x=0) = 1')
-    fprintf('\n\nCuya soluci髇, encontrada a mano con la condici髇 inicial es ES:')
+    fprintf('\n\nCuya soluci贸n, encontrada a mano con la condici贸n inicial es ES:')
     fprintf('\n\ty(x) = 4x - x^2 + 1\n\n')
     
     fprintf('Ahora, la EDO a solucionar por medio de MATLAB con el comando dsolve():\n');
     fprintf('\tdy/dx = 4 - 2x\n');
-    fprintf('Con condici髇 inicial:\n');
+    fprintf('Con condici贸n inicial:\n');
     fprintf('\ty(0) = 1\n\n');
     
-    fprintf('Es (Soluci髇 Particular de la EDO): \n\ty(x) = ');
-    disp(solEDO); % disp(solEDO) muestra el valor de la variable solEDO que contiene variable simb髄ica x.
+    fprintf('Es (Soluci贸n Particular de la EDO): \n\ty(x) = ');
+    disp(solEDO); % disp(solEDO) muestra el valor de la variable solEDO que contiene variable simb贸lica x.
     
     fprintf('Ahora bien, si comparamos las 2 soluciones, a mano y por Matlab, son las mismas,\n');
-    fprintf('solo hay que expandir la souci髇 dada por Matlab para ver la igualdad de ellas.\n\n');
+    fprintf('solo hay que expandir la souci贸n dada por Matlab para ver la igualdad de ellas.\n\n');
 end % Fin Scrip EDOMelissa()
