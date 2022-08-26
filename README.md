@@ -12,6 +12,6 @@ Los nombres de los archivos con su respectiva exteción son:
     * EDOMelissa.m (Archivo de Matlab)
     * EDOMelissa.pdf (Archivo de PDF)
     
-Angie Melissa Bravo González
-Universidad del Cauca
-Ingeniería Civíl
+   Angie Melissa Bravo González
+   Universidad del Cauca
+   Ingeniería Civíl
