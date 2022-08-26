@@ -4,7 +4,7 @@ function solEDO = EDOMelissa() % Inicio Scrip EDOMelissa()
     %%%%    medio del comando dsolve(), con condición inicial.
     
     syms Y(x) % Definiendo simbología o variables simbólicas
-    eds = diff(Y,x) == 4 - 2*x; % diff() para diferenciar una expresión o función simbólica       
+    eds = diff(Y,x) == 4 - 2*x; % diff() para diferenciar una expresión o función simbólica
     condicion = Y(0) == 1; % Definiendo la condicion inicial
     sol(x) = dsolve( eds, condicion); % dsolve() me da la solución de la EDO de acuerdo a la condición inicial
     solEDO = sol(x); % le asigno a solEDO lo que tiene la función sol(x)  
@@ -21,7 +21,7 @@ function solEDO = EDOMelissa() % Inicio Scrip EDOMelissa()
     ylabel('y(x)') % Etiquetando el eje y
     legend('y(x) = 1 - x(x - 4)','y(0) = 1') % Etiquetas de las funciones representadas
     grid on % Para activar la cuadricula en el plano xy
-    grid minor
+    grid minor % Alterna la visibilidad de las líneas de cuadrículas menores.
     
     % Para que se muestre el origen (0,0) en el plano xy
     ax = gca;
