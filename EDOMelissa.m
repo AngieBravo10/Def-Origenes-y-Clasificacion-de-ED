@@ -5,6 +5,7 @@ function solEDO = EDOMelissa() % Inicio Scrip EDOMelissa()
     
     syms Y(x) % Definiendo simbología o variables simbólicas
     eds = diff(Y,x) == 4 - 2*x; % diff() para diferenciar una expresión o función simbólica
+    
     condicion = Y(0) == 1; % Definiendo la condicion inicial
     sol(x) = dsolve( eds, condicion); % dsolve() me da la solución de la EDO de acuerdo a la condición inicial
     solEDO = sol(x); % le asigno a solEDO lo que tiene la función sol(x)  
@@ -13,7 +14,7 @@ function solEDO = EDOMelissa() % Inicio Scrip EDOMelissa()
     y = eval( vectorize( solEDO ) ); % Evalúo la solución particular de la EDO con los valores del vector x
     
     %Graficando la solución particular de la EDO
-    figure('Name' , 'Angie Melissa Bravo Gonzalez') % Dandole un nombre a la figura o ventana
+    figure('Name' , 'Angie Melissa Bravo González') % Dandole un nombre a la figura o ventana
     plot(x,y,'red', 0,sol(0),'-s') % Graficando la solución particular de la EDO y la condición inicial
     
     title('Solución particular de la EDO: y(x) = 1 - x(x - 4), y satisface y(0) = 1')%Título de la gráfica
