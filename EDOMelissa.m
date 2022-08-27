@@ -32,7 +32,7 @@ function solEDO = EDOMelissa() % Inicio Scrip EDOMelissa()
     % Mostrando resultados por consola con fprintf()
     fprintf('\nAPLICACIÓN QUE RESUELVE LA EDO DE VARIAVLE SEPARABLE:')
     fprintf('\n\tdy/dx = 4 - 2x  con y(x=0) = 1')
-    fprintf('\n\nCuya solución, encontrada a mano con la condición inicial es ES:')
+    fprintf('\n\nCuya solución, encontrada a mano con la condición inicial es:')
     fprintf('\n\ty(x) = 4x - x^2 + 1\n\n')
     
     fprintf('Ahora, la EDO a solucionar por medio de MATLAB con el comando dsolve():\n');
