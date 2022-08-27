@@ -30,7 +30,7 @@ function solEDO = EDOMelissa() % Inicio Scrip EDOMelissa()
     box off
     
     % Mostrando resultados por consola con fprintf()
-    fprintf('\nAPLICACIÓN QUE RESUELVE LA EDO DE VARIAVLE SEPARABLE:')
+    fprintf('\nAPLICACIÓN QUE RESUELVE LA EDO DE VARIABLE SEPARABLE:')
     fprintf('\n\tdy/dx = 4 - 2x  con y(x=0) = 1')
     fprintf('\n\nCuya solución, encontrada a mano con la condición inicial es:')
     fprintf('\n\ty(x) = 4x - x^2 + 1\n\n')
