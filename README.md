@@ -14,6 +14,7 @@ Los nombres de los archivos con su respectiva exteción, son:
     * Figura_Logo_de_Unicauca.jpg   (Archivo de imágen)
     * Figura_de_Leibniz.jpg         (Archivo de imágen)
     * Figura_de_Newton.jpg          (Archivo de imágen)
+    * README.md                     (Archivo de información)
     
  NOTA:
    * Si copia el código látex o descarga el archivo Artículo_de_Melissa.tex, es necesario descargar los archivo:
@@ -21,8 +22,8 @@ Los nombres de los archivos con su respectiva exteción, son:
       + Figura_de_Leibniz.jpg
       + Figura_de_Newton.jpg
       
-     para la correcta ejecución del código látex.
+      para la correcta ejecución del código látex.
     
- - Angie Melissa Bravo González
- - Universidad del Cauca
- - Ingeniería Civíl
+ * Angie Melissa Bravo González
+ * Universidad del Cauca
+ * Ingeniería Civíl
