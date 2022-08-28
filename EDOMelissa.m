@@ -1,39 +1,39 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Matlab R2015b %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%% Scrip que resuelve una EDO separable, lineal, de primer grado por
-%%%% medio del comando dsolve(), con condici髇 inicial. 
+%%%% medio del comando dsolve(), con condici贸n inicial. 
 
-% dsolve() da la soluci髇 particular de la EDO
-solP = dsolve( 'Dy = 4-2*x', 'y(0) = 1','x' )
+% dsolve() da la soluci贸n particular de la EDO
+solP = dsolve( 'Dy = 4-2*x', 'y(0) = 1','x' );
 
 % genero un vector x con valores desde -2 hasta 5, de 500 elementos
 x = linspace(-2,5,500);
-% Eval鷒 la soluci髇 particular de la EDO con los valores del vector x
+% Eval煤o la soluci贸n particular de la EDO con los valores del vector x
 y = eval( vectorize( solP ) );
 
 %%%% Graficando la solucion particular y condicion inicial
 % Dandole un nombre a la figura o ventana
 figure('Name' , 'Angie Melissa Bravo Gonzalez') 
 plot(x, y, 'red', 0, 1, '-s')% Graficando x, y, y(0)=1
-% D醤dole un t韙ulo a la gr醘ica
-title('Soluci髇 particular y(x) = 1 - x(x - 4), satisface y(0) = 1')
+% D谩ndole un t铆tulo a la gr谩fica
+title('Soluci贸n particular y(x) = 1 - x(x - 4), satisface y(0) = 1')
 xlabel('x') % Etiquetando el eje x
 ylabel('y(x)') % Etiquetando el eje y
 legend('y(x) = 1 - x(x - 4)','y(0) = 1') % Convencion de las funciones
 axis([-1 5 -1 5.3]) % Definiendo el area del plano xy a mostrar
     
 %%%% Mostrando resultados por consola con fprintf()
-fprintf('\nAplicaci髇 Que Resuelve La EDO De Variable Separable:')
+fprintf('\nAplicaci贸n Que Resuelve La EDO De Variable Separable:')
 fprintf('\n\tdy/dx = 4 - 2x  con y(x=0) = 1')
-fprintf('\n\nCuya soluci髇, encontrada a mano con la condici髇 inicial es:')
+fprintf('\n\nCuya soluci贸n, encontrada a mano con la condici贸n inicial es:')
 fprintf('\n\ty(x) = 4x - x^2 + 1\n\n')
     
 fprintf('Ahora, la EDO a solucionar con el comando dsolve():\n');
 fprintf('\tdy/dx = 4 - 2x\n');
-fprintf('Con condici髇 inicial:\n');
+fprintf('Con condici贸n inicial:\n');
 fprintf('\ty(0) = 1\n\n');
     
-fprintf('Es (Soluci髇 Particular de la EDO): \n\ty(x) = ');
-disp(solP); % disp() para mostrar por consola una expresi髇 con variables simb髄icas.
+fprintf('Es (Soluci贸n Particular de la EDO): \n\ty(x) = ');
+disp(solP); % disp() para mostrar por consola una expresi贸n con variables simb贸licas.
     
 fprintf('Ahora bien, si comparamos las 2 soluciones, a mano y por Matlab, son las mismas,\n');
-fprintf('solo hay que expandir la soluci髇 dada por Matlab para ver la igualdad de ellas.\n\n');
+fprintf('solo hay que expandir la soluci贸n dada por Matlab para ver la igualdad de ellas.\n\n');
