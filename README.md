@@ -24,6 +24,7 @@ Los nombres de los archivos con su respectiva exteción, son:
       
        en la ruta donde va a crear o ejecutar el código látex, para la correcta ejecución del código.
       
+      
  
  * Angie Melissa Bravo González
  * Universidad del Cauca
