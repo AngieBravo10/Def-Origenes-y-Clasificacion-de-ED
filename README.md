@@ -17,9 +17,9 @@ Los nombres de los archivos con su respectiva exteción, son:
     
  NOTA:
    * Si copia el código látex o descarga el archivo Artículo_de_Melissa.tex, es necesario descargar los archivo:
-      * Figura_Logo_de_Unicauca.jpg   (Archivo de imágen)
-      * Figura_de_Leibniz.jpg         (Archivo de imágen)
-      * Figura_de_Newton.jpg          (Archivo de imágen) 
+      + Figura_Logo_de_Unicauca.jpg
+      + Figura_de_Leibniz.jpg
+      + Figura_de_Newton.jpg
       
      para la correcta ejecución del código látex.
     
