@@ -22,8 +22,8 @@ Los nombres de los archivos con su respectiva exteción, son:
       + Figura_de_Leibniz.jpg
       + Figura_de_Newton.jpg
       
-      en la ruta donde va a crear o ejecutar el código látex, para la correcta ejecución del código.
- 
+       en la ruta donde va a crear o ejecutar el código látex, para la correcta ejecución del código.
+      
  
  * Angie Melissa Bravo González
  * Universidad del Cauca
